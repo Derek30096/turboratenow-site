@@ -3,95 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compare Auto Insurance</title>
+  <title>TurboRateNow - Auto Insurance</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
       text-align: center;
-      background: #fff;
       margin: 0;
-      padding: 30px 20px;
-      color: #333;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin: 25px 0 10px;
-    }
-
-    p {
-      font-size: 1.25em;
-      margin: 10px 0 30px;
-    }
-
-    .cta-button {
-      background-color: #ff5a00;
-      color: white;
-      padding: 18px 40px;
-      font-size: 1.35em;
-      border: none;
-      border-radius: 10px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin: 25px 0;
-      animation: bounce 2s infinite;
-    }
-
-    @keyframes bounce {
-      0%, 100% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-5px);
-      }
+      padding: 0;
     }
 
     .car-image {
-      max-width: 100%;
+      max-width: 300px; /* 25% smaller look */
+      width: 75%;
       height: auto;
-      border-radius: 12px;
-      margin: 0 auto 25px;
+      display: block;
+      margin: 40px auto 20px auto;
     }
 
-    .badges {
+    h1 {
+      font-size: 32px;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #555555;
+      margin-bottom: 30px;
+    }
+
+    .cta-button {
+      font-size: 20px;
+      background-color: #ff5100;
+      color: white;
+      padding: 15px 40px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .trust-badges {
       display: flex;
       justify-content: center;
       gap: 10px;
-      margin: 20px 0;
+      margin-bottom: 20px;
     }
 
-    .badges img {
-      height: 18px;
+    .trust-badges img {
+      height: 20px;
+      object-fit: contain;
     }
 
-    .footer {
-      font-size: 0.85em;
-      color: #777;
-      margin-top: 30px;
+    .disclaimer {
+      font-size: 13px;
+      color: #777777;
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ Car Image Above CTA -->
-   <img src="https://res.cloudinary.com/dc465fef-8bb1-4bce-aaa6-2883f4af7e08/image/upload/v1691178493/carimage.png" alt="Dream Car" class="car-image">
+  <!-- Car Image -->
+  <img src="https://turboratenow.net/assets/car-tall.png" alt="Dream Car" class="car-image" />
 
-
-  <h1>Still Overpaying for Auto Insurance?</h1>
+  <!-- Headline -->
+  <h1><strong>Still Overpaying for Auto Insurance?</strong></h1>
   <p>Compare 50+ providers and see how much you can save. It only takes 60 seconds.</p>
+
+  <!-- CTA Button -->
   <a href="#" class="cta-button">Get My Free Quote →</a>
 
   <!-- Trust Badges -->
-  <div class="badges">
-    <img src="https://img.shields.io/badge/Site%20Secure-McAfee-green?logo=McAfee&style=flat-square" alt="McAfee Secure">
-    <img src="https://img.shields.io/badge/Site%20Secure-Norton-yellow?logo=Norton&style=flat-square" alt="Norton Secure">
+  <div class="trust-badges">
+    <img src="https://turboratenow.net/assets/mcafee.png" alt="McAfee Secure" />
+    <img src="https://turboratenow.net/assets/siteseal.png" alt="Site Secure" />
+    <img src="https://turboratenow.net/assets/norton.png" alt="Norton Secure" />
   </div>
 
-  <div class="footer">
-    This site is not affiliated with any insurance company. All rights reserved.
-  </div>
+  <!-- Disclaimer -->
+  <p class="disclaimer">This site is not affiliated with any insurance company. All rights reserved.</p>
 
 </body>
 </html>
